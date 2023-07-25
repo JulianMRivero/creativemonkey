@@ -1,21 +1,26 @@
 import NavBar from "../NavBar/NavBar";
 import Video from "../Video/Video";
-
+import About from "../About/About";
+import LogoSlider from "../LogoSlider/LogoSlider";
+import Servicios from "../Servicios/Servicios";
 const Home = () => {
   return (
     <>
-      <div className="bg-gray-900 h-screen min-w-screen bg-cover ">
+      <div className="h-screen min-w-full bg-cover bg-blackCM">
         <NavBar />
         <a id="home" className="scroll-m-[10ex]" />
-       <div >
-        <Video />
-      </div>
+        <div>
+          <Video />
+        </div>
         <a id="about" className="scroll-m-[10ex]" />
-        <section className="scroll-m-10 text-xl p-10 h-full  bg-gradient-to-b from-gray-800 to-deep-purple-100">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-          ut est vitae totam quos amet deleniti tenetur placeat quia atque.
-          Voluptates repellat ullam saepe totam debitis dignissimos, cum
-          voluptate laboriosam.
+        <section className="min-h-screen min-w-full flex justify-center items-center bg-whiteCM">
+          <About />
+        </section>
+        <section>
+        <LogoSlider/>
+        </section>
+        <section>
+          <Servicios/>
         </section>
       </div>
     </>
