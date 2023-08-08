@@ -4,12 +4,14 @@ import "slick-carousel/slick/slick-theme.css";
 import imagePaths from "../../assets/LOGOS/index.js";
 const LogoSlider = () => {
   const settings = {
+    infinite: true,
+    lazyLoad: true,
     slidesToShow: 5,
     slidesToScroll: 2,
-    initialSlide: 1,
     autoplay: true,
-    speed: 3000,
+    speed: 5000,
     autoplaySpeed: 10,
+    cssEase: "linear",
     prevArrow: <></>,
     nextArrow: <></>,
 
@@ -47,7 +49,7 @@ const LogoSlider = () => {
           Confian en nuestro servicio
         </h2>
       </div>
-      <div>
+      <div className=" w-full">
         <Slider {...settings}>
           {imagePaths.map(({ path, imageName }) => (
             <div key={imageName} className="h-36 bg-white  ">

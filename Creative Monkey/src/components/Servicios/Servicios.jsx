@@ -24,47 +24,48 @@ const Servicios = () => {
       id: 2,
       svg: produccionesFoto,
       description:
-        "Producciones audiovisuales para videosinstitucionales, video clips, cortometraje, largometrajes, etc",
+        "Producciones Fotograficas (Interior / Exterior)",
     },
     {
       id: 3,
       svg: streaming,
       description:
-        "Producciones audiovisuales para videosinstitucionales, video clips, cortometraje, largometrajes, etc",
+        "Streaming en vivo o falso vivo",
     },
     {
       id: 4,
       svg: event,
       description:
-        "Producciones audiovisuales para videosinstitucionales, video clips, cortometraje, largometrajes, etc",
+        "Sonido, pantalla led e iluminación Profesional para toda clases de eventos."
+       
     },
     {
         id: 5,
         svg: momentos,
         description:
-          "Producciones audiovisuales para videosinstitucionales, video clips, cortometraje, largometrajes, etc",
+          "Cobertura fotografíca, video y circuito cerrado para eventos en general.",
       },
       {
         id: 6,
         svg: programing,
         description:
-          "Producciones audiovisuales para videosinstitucionales, video clips, cortometraje, largometrajes, etc",
+          "Diseño Grafico y Web",
       },
       {
         id: 7,
         svg: asesoria,
         description:
-          "Producciones audiovisuales para videosinstitucionales, video clips, cortometraje, largometrajes, etc",
+          "Asesoría en organización de Eventos / Congresos / Simposios.",
       },
       {
         id: 8,
         svg: alquier,
         description:
-          "Producciones audiovisuales para videosinstitucionales, video clips, cortometraje, largometrajes, etc",
+          "Alquiler de equipos para producciones Audiovisuales.",
       },
   ];
   return (
-    <div className="min-h-screen  bg-gradient-to-b from-gray-50 to-slate-900">
+    <div className="min-h-screen  bg-gradient-to-b from-gray-50 to-purple-100">
       <div className="flex justify-center items-center">
         <h2 className="font-nunito font-medium  text-black text-5xl md:text-7xl mt-12">
           Servicios
@@ -79,15 +80,15 @@ const Servicios = () => {
           return (
             <div
               key={servicio.id}
-              className={`lg:gap-10 lg:flex lg:items-center lg:m-10 lg:flex-row ${
+              className={`lg:gap-10 lg:w-full lg:flex lg:items-center lg:justify-evenly lg:m-1 lg:flex-row ${
                 servicio.id % 2 == 0 ? "lg:flex-row-reverse" : ""
               }`}
             >
               <h2 className="font-nunito font-medium  text-black ml-5 text-xl md:text-4xl text-center">
                 {servicio.description}
               </h2>
-              <div className="mt-10 flex justify-center">
-                <img src={servicio.svg} className="w-72 md:w-96 lg:w-[40rem]" />
+              <div className="mt-10 mb-10 flex justify-center lg:flex lg:justify-between">
+                <img src={servicio.svg} className="w-72 md:w-96 lg:w-[28rem]" />
               </div>
             </div>
           );

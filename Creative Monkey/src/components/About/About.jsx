@@ -8,11 +8,11 @@ import {
 const About = () => {
   return (
     <div className="bg-whiteCM min-h-screen mb-10 space-y-20 md:w-full md:flex md:flex-col md:items-center md:justify-center border-none">
-      <Card className="flex flex-col items-center justify-center mt-14 mb-10 shadow-md shadow-slate-800 text-center  h-36 bg-blackCM md:w-[35rem] lg:w-3/4 lg:-mt-14 ">
+      <Card className="flex  flex-col items-center justify-center mt-14 mb-10 shadow-md shadow-slate-800 text-center  h-36 bg-blackCM md:w-[35rem] lg:w-3/4 lg:-mt-14 ">
         <Typography
           variant="h2"
           color="white"
-          className="font-nunito font-medium md:text-[48px] lg:text-[60px] lg:tracking-widest"
+          className="font-quickSand font-medium md:text-[48px] lg:text-[60px] lg:tracking-widest"
         >
           Sobre <br className="lg:hidden" /> Creative Monkey
         </Typography>
@@ -35,31 +35,34 @@ const About = () => {
           <Typography
             variant="lead"
             color="black"
-            className="mt-3 font-medium font-nunito text-2xl"
+            className="mt-3 font-semibold font-quickSand text-2xl"
           >
             Somos una empresa de producción integral de eventos, producciones
             audiovisuales y fotográficas que fue fundada en 2020. Con un equipo
-            de jóvenes emprendedores con amplia experiencia en el rubro, en el que cada miembro aporta sus habilidades específicas para brindar un servicio completo y de calidad a nuestros clientes. Nos hemos establecido como un proveedor confiable y versátil en
-            el campo de los eventos y producciones.
+            de jóvenes emprendedores con amplia experiencia en el rubro, en el
+            que cada miembro aporta sus habilidades específicas para brindar un
+            servicio completo y de calidad a nuestros clientes. Nos hemos
+            establecido como un proveedor confiable y versátil en el campo de
+            los eventos y producciones.
           </Typography>
           <Typography
             variant="lead"
             color="black"
-            className="mt-3 font-medium font-nunito text-2xl"
+            className="mt-3 font-semibold font-quickSand text-2xl"
           >
             En cuanto a los servicios que ofrecemos, nos destacamos por la
             capacidad para gestionar cualquier tipo de evento, y encargarnos de
             toda la planificación, diseño y logística necesarios para llevar a
             cabo eventos y producciones de alta calidad.
-            
           </Typography>
           <Typography
             variant="lead"
             color="black"
-            className="mt-3 font-medium font-nunito text-2xl"
+            className="mt-3 font-semibold font-quickSand text-2xl"
           >
-           Con sede en la ciudad de Salta Capital, Creative Monkey opera en toda la provincia, lo que nos permite atender a una amplia variedad de clientes y eventos.
-            
+            Con sede en la ciudad de Salta Capital, Creative Monkey opera en
+            toda la provincia, lo que nos permite atender a una amplia variedad
+            de clientes y eventos.
           </Typography>
         </CardBody>
       </Card>

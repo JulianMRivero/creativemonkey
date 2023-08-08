@@ -14,6 +14,7 @@ module.exports = withMT({
       },
       fontFamily: {
         nunito: ["Nunito Sans"],
+        quickSand:["Quicksand"],
       },
       transformOrigin: {
         right: "right",

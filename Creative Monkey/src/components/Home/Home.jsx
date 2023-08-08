@@ -3,9 +3,13 @@ import Video from "../Video/Video";
 import About from "../About/About";
 import LogoSlider from "../LogoSlider/LogoSlider";
 import Servicios from "../Servicios/Servicios";
+import Contacto from "../Contacto/Contacto";
+import SpeedDialcm from "../SpeedDialCM/SpeedDialfixed";
+
 const Home = () => {
   return (
     <>
+<SpeedDialcm/>
       <div className="h-screen min-w-full bg-cover bg-blackCM">
         <NavBar />
         <a id="home" className="scroll-m-[10ex]" />
@@ -17,10 +21,15 @@ const Home = () => {
           <About />
         </section>
         <section>
-        <LogoSlider/>
+          <LogoSlider />
         </section>
+        <a id="servicios" className="scroll-m-[10ex]" />
         <section>
-          <Servicios/>
+          <Servicios />
+        </section>
+        <a id="contacto" className="scroll-m-[10ex]" />
+        <section>
+          <Contacto />
         </section>
       </div>
     </>

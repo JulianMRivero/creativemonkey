@@ -15,13 +15,13 @@ const NavBar = () => {
       title: "About",
       path: "#about",
     },
-    // {
-    //   title: logoNav,
-    //   path: "#home",
-    // },
+    {
+       title: "Servicios",
+       path: "#servicios",
+     },
 
     { title: "Trabajos", path: "/trabajos" },
-    { title: "Contacto", path: "/contacto" },
+    { title: "Contacto", path: "#contacto" },
   ];
   const links2 = [
     { title: "casa", path: "/" },
