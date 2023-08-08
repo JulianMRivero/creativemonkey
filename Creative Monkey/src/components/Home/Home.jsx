@@ -9,8 +9,9 @@ import SpeedDialcm from "../SpeedDialCM/SpeedDialfixed";
 const Home = () => {
   return (
     <>
-<SpeedDialcm/>
+      <SpeedDialcm />
       <div className="h-screen min-w-full bg-cover bg-blackCM">
+        <h1>asidajsid</h1>
         <NavBar />
         <a id="home" className="scroll-m-[10ex]" />
         <div>
