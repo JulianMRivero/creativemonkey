@@ -6,7 +6,7 @@ module.exports = withMT({
     extend: {
       textShadow: {
         sm: "0 1px 2px var(--tw-shadow-color)",
-        DEFAULT: "1px 5px 1px var(--tw-shadow-color)",
+        DEFAULT: "1px 3px 1px var(--tw-shadow-color)",
         lg: "13px 8px 16px var(--tw-shadow-color)",
       },
       scrollBehavior: {

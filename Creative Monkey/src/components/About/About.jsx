@@ -12,7 +12,7 @@ const About = () => {
         <Typography
           variant="h2"
           color="white"
-          className="font-quickSand font-medium md:text-[48px] lg:text-[60px] lg:tracking-widest"
+          className="font-quickSand font-semibold md:text-[48px] lg:text-[60px] lg:tracking-widest"
         >
           Sobre <br className="lg:hidden" /> Creative Monkey
         </Typography>

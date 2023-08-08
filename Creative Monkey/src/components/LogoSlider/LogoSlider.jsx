@@ -45,7 +45,7 @@ const LogoSlider = () => {
   return (
     <div className="bg-white h-96 ">
       <div className="flex justify-center items-center h-32  ">
-        <h2 className="font-nunito font-medium  text-black text-3xl md:text-5xl ">
+        <h2 className=" font-semibold  text-black text-3xl md:text-5xl ">
           Confian en nuestro servicio
         </h2>
       </div>

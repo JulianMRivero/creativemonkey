@@ -16,9 +16,9 @@ const NavBar = () => {
       path: "#about",
     },
     {
-       title: "Servicios",
-       path: "#servicios",
-     },
+      title: "Servicios",
+      path: "#servicios",
+    },
 
     { title: "Trabajos", path: "/trabajos" },
     { title: "Contacto", path: "#contacto" },
@@ -41,7 +41,7 @@ const NavBar = () => {
         <a
           href={link.path}
           key={i}
-          className="a font-nunito text-white text-2xl px-3 py-4 font-medium  hover:text-gray-200 "
+          className="a o text-white text-2xl px-3 py-4 font-medium  hover:text-gray-200 "
         >
           {link.title}
         </a>
@@ -54,7 +54,7 @@ const NavBar = () => {
         <Link
           to={link.path}
           key={i}
-          className="a font-nunito text-white text-2xl px-3 py-4 font-medium  hover:text-gray-200 "
+          className="a  text-white text-2xl px-3 py-4 font-medium  hover:text-gray-200 "
         >
           {link.title}
         </Link>
@@ -63,10 +63,10 @@ const NavBar = () => {
   );
   return (
     <>
-      <Navbar className="fixed top-0 z-10 h-max max-w-full rounded-none border-none py-2 px-4 lg:px-8 lg:py-4 bg-neutral-900 bg-opacity-90 lg:bg-opacity-70">
+      <Navbar className="fixed top-0 z-10  max-w-full rounded-none border-none  py-2 px-4 lg:px-8 lg:py-4 bg-neutral-900 bg-opacity-70 lg:bg-opacity-70 ">
         <div className="lg:absolute">
           <Link to="/" className="cursor-pointer">
-          <img src={logo} className="lg:w-36 lg:flex hidden" />
+            <img src={logo} className="lg:w-36 lg:flex hidden" />
           </Link>
         </div>
         <div className="flex items-center justify-between lg:justify-center text-blue-gray-900">
