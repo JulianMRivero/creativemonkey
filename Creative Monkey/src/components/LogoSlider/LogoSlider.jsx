@@ -1,47 +1,12 @@
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "./customStyles.css";
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
 import imagePaths from "../../assets/LOGOS/index.js";
+
 const LogoSlider = () => {
-  const settings = {
-    infinite: true,
-    lazyLoad: true,
-    slidesToShow: 5,
-    slidesToScroll: 2,
-    autoplay: true,
-    speed: 5000,
-    autoplaySpeed: 10,
-    cssEase: "linear",
-    prevArrow: <></>,
-    nextArrow: <></>,
-
-    responsive: [
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 1,
-          speed: 5000,
-          autoplaySpeed: 10,
-          swipeToSlide: true,
-        },
-      },
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 2,
-          initialSlide: 1,
-          speed: 5000,
-          autoplaySpeed: 10,
-          swipeToSlide: true,
-        },
-      },
-    ],
-  };
-  console.log(imagePaths);
-
   return (
     <div className="bg-white h-96 ">
       <div className="flex justify-center items-center h-32  ">
@@ -49,20 +14,51 @@ const LogoSlider = () => {
           Confian en nuestro servicio
         </h2>
       </div>
-      <div className=" w-full">
-        <Slider {...settings}>
+      <Swiper
+        centeredSlides={true}
+        speed={1300}
+        loop={true}
+        autoplay={{
+          delay: 1,
+          disableOnInteraction: false,
+        }}
+        navigation={false}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper"
+        breakpoints={{
+          390: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            speed: 1000,
+          },
+
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 10,
+          },
+
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 10,
+          },
+        }}
+      >
+        <div className="swiper-wrapper">
           {imagePaths.map(({ path, imageName }) => (
-            <div key={imageName} className="h-36 bg-white  ">
+            <SwiperSlide
+              key={imageName}
+              className="h-36 w-[250px] border  bg-white  "
+            >
               <img
                 key={imageName}
                 src={path}
                 alt={imageName}
-                className={`h-32 w-3/4 object-contain  text-center mt-2  m-auto `}
+                className={`h-32 w-3/4   object-contain  text-center mt-2  m-auto `}
               />
-            </div>
+            </SwiperSlide>
           ))}
-        </Slider>
-      </div>
+        </div>
+      </Swiper>
     </div>
   );
 };
