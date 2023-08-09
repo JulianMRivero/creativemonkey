@@ -45,10 +45,7 @@ const LogoSlider = () => {
       >
         <div className="swiper-wrapper">
           {imagePaths.map(({ path, imageName }) => (
-            <SwiperSlide
-              key={imageName}
-              className="h-36 w-[250px] border  bg-white  "
-            >
+            <SwiperSlide key={imageName} className="h-36 w-[250px]  bg-white  ">
               <img
                 key={imageName}
                 src={path}
