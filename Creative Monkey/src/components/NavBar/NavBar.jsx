@@ -1,5 +1,5 @@
 // import { Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Navbar, MobileNav, IconButton } from "@material-tailwind/react";
 import iso from "../../assets/creative logo.png";
@@ -8,7 +8,18 @@ import "./customstyles.css";
 const NavBar = () => {
   const location = useLocation();
   const path = location.pathname;
+  const [scrollPosition, setScrollPosition] = useState(0);
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPosition(window.scrollY);
+    };
 
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   const links = [
     { title: "Home", path: "#home" },
     {
@@ -63,7 +74,13 @@ const NavBar = () => {
   );
   return (
     <>
-      <Navbar className="fixed top-0 z-10  max-w-full rounded-none border-none  py-2 px-4 lg:px-8 lg:py-4 bg-neutral-900 bg-opacity-70 lg:bg-opacity-70 ">
+      <Navbar
+        className={`fixed top-0  max-w-full rounded-none border-none  py-2 px-4 lg:px-8 lg:py-4 z-50 ${
+          scrollPosition >= 750
+            ? `bg-neutral-900 bg-opacity-90 `
+            : "bg-opacity-10"
+        }`}
+      >
         <div className="lg:absolute">
           <Link to="/" className="cursor-pointer">
             <img src={logo} className="lg:w-36 lg:flex hidden" />

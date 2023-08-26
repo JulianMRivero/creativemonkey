@@ -74,7 +74,7 @@ const Contacto = () => {
   console.log(isEmpty);
   return (
     <>
-      <div className="flex flex-col items-center h-screen lg:h-[40rem] bg-neutral-800 lg: p-10">
+      <div  className="flex flex-col items-center h-screen lg:h-[40rem] bg-neutral-800 lg: p-10">
         <div className=" m-10">
           <h2 className="font-quickSand font-medium  text-white text-3xl md:text-5xl ">
             Contacto
@@ -152,6 +152,7 @@ const Contacto = () => {
           )}
           </div>
         </form>
+
       </div>
     </>
   );

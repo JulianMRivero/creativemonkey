@@ -18,7 +18,7 @@ const Home = () => {
         <Video />
       </div>
       <a id="about" className="scroll-m-[10ex]" />
-      <section className="min-h-screen min-w-full flex justify-center items-center bg-whiteCM">
+      <section>
         <About />
       </section>
       <section>
