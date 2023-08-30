@@ -11,9 +11,8 @@ import youtube from "../../assets/youtube.svg";
 import whatsapp from "../../assets/whatsapp.svg";
 
 const SpeedDialcm = () => {
-  
   return (
-    <div className="fixed bottom-5 right-5  z-10 ">
+    <div className="fixed bottom-5 right-5 z-50">
       <div className="absolute bottom-0 right-0">
         <SpeedDial>
           <SpeedDialHandler>
